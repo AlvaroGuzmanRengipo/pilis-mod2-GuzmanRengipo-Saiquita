@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feria de las Plantas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <header class="cabecera">
+
+        <nav class="nav_header">
+            <ul class="nav_title">
+                <li><a href="#nosotros">NOSOTROS</a></li>
+                <li><a href="#evento">EL EVENTO</a></li>
+                <li><a href="#registro">REGISTRO</a></li>
+            </ul>
+        </nav>
+        <a href="#home">
+            <img class="logo" src="./img/logo_EDEP.jpg" alt="logo">
+        </a>
+    </header>
+
+    <main>
+        <!-- ----------------------------------------------------------------------------------------------------------------- -->
+        <article class="home" id="home">
+            <div class="tit_home">
+                <h1>Gran Feria de las Plantas</h1>
+                <br>
+                <h3>Juntos Potenciamos el Comercio Jujeño</h3>
+            </div>
+            <div class="img_home">
+                <img src="https://notinor.com/jujuy/wp-content/uploads/2020/12/Feria-de-Plantas.jpg"
+                    alt="img_feria_plantas">
+
+                <!-- Carrucel de imagenes -->
+                <!-- <div class="container">
+
+                    <ul class="slider">
+                        <li id="slide1">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3947459/car.jpg" />
+                        </li>
+                        <li id="slide2">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3947459/sunset.jpg" />
+                        </li>
+                        <li id="slide3">
+                            <h1>Ejemplo con otros elementos</h1>
+                            <p>Esto es un párrafo de ejemplo para comprobar que podemos meter cualquier tipo de
+                                elementos en el slider</p>
+                            <a href="https://kikopalomares.com/">¡Corre a mi web para más contenido!</a>
+                        </li>
+                    </ul>
+
+                    <ul class="menu">
+                        <li>
+                            <a href="#slide1"></a>
+                        </li>
+                        <li>
+                            <a href="#slide2"></a>
+                        </li>
+                        <li>
+                            <a href="#slide3"></a>
+                        </li>
+                    </ul>
+
+                </div> -->
+            </div>
+        </article>
+        <!-- ----------------------------------------------------------------------------------------------------------------- -->
+        <article class="evento" id="evento">
+            <div class="event_video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/6d__iXO_1KI"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="tit_evento">
+                <h2>Titulo</h2>
+                <br>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat quia voluptate, culpa neque fugit
+                    cupiditate modi non earum numquam fugiat nemo a accusamus qui beatae rerum quam id laborum. Quod!
+                </p>
+            </div>
+        </article>
+        <!-- ----------------------------------------------------------------------------------------------------------------- -->
+        <article class="nosotros" id="nosotros">
+            <div class="tit_nosotros">
+                <h2>Ministerio de Desarrollo Económico y Producción de Jujuy</h2>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque est cumque veritatis repellat atque
+                    saepe vitae! Maxime, officiis consequatur. Maxime nam quaerat laudantium inventore, eos aliquam sed
+                    repellendus iure repudiandae.</p>
+            </div>
+            <div class="nosotros_img">
+                <img src="https://scontent.fjuj3-1.fna.fbcdn.net/v/t1.6435-9/209655751_2013530038786317_6880771943408426745_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=e3f864&_nc_ohc=zsRDw6qK5EAAX9WHXnB&tn=-XaIdRok0uIRELc1&_nc_ht=scontent.fjuj3-1.fna&oh=00_AT94BNLisUFNP2xHbG9Q83bcqbmU6uvt-1m-8z31c3E3cA&oe=632CECB8"
+                    alt="">
+            </div>
+        </article>
+        <!-- ----------------------------------------------------------------------------------------------------------------- -->
+        <article class="registro" id="registro">
+            <div class="tit_registro">
+                <h1>Sumate al evento para potenciar el comercio local</h1>
+                <br>
+                <h3>Luego te contactaremos</h3>
+            </div>
+            <div class="form_reg">
+                <h2>Formulario de Contacto</h2>
+                <br>
+                <form action="" id="registro_formulario">
+                    <fieldset class="field_form">
+                        <!-- <legend>Formulario</legend> -->
+                        <div class="form-group">
+                            <label for="comercio">COMERCIO
+                                <input type="text" name="comercio" id="comercio">
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label for="titular">TITULAR
+                                <input type="text" name="titular" id="titular">
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label for="celular">CELULAR
+                                <input type="number" name="celular" id="celular">
+                            </label>
+                        </div>
+                    </fieldset>
+                    <div class="btn">
+                        <button id="enviar" class="btn_enviar"> <b>ENVIAR</b> </button>
+                    </div>
+                </form>
+            </div>
+        </article>
+        <!-- ----------------------------------------------------------------------------------------------------------------- -->
+        <article class="clima">
+
+            <div class="estado_clima" id="estado_clima">
+
+            </div>
+            <div class="map_clima">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3639.6668822490055!2d-65.33348658552637!3d-24.18341279074102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0ee2033f07f3%3A0xc77a811c6a4b0561!2sCiudad%20Cultural!5e0!3m2!1ses!2sar!4v1661395257954!5m2!1ses!2sar"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </article>
+        <!-- ----------------------------------------------------------------------------------------------------------------- -->
+        <article class="logo_gob">
+            <div class="img_gob_logo">
+                <img src="https://iconape.com/wp-content/files/yf/254275/png/254275.png" alt="logo_gobierno">
+            </div>
+        </article>
+
+    </main>
+
+    <footer>
+        <article class="contacto">
+            <div class="txt_contacto">
+                <p>Contacto</p>
+                <p><a href=" https://wa.me/543884665732" target="_blank" class="link_wtp">WhastApp</a></p>
+            </div>
+            <div class="img_contacto">
+                <img src="./img/whatsapp-logo-1.png" alt="logo_wts">
+            </div>
+        </article>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>

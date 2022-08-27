@@ -1,0 +1,378 @@
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Montserrat:wght@100;200;300;400;600;700;800;900&family=Roboto:wght@100;400;500&display=swap');
+
+/* Para todo el HTML */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+    /* background: linear-gradient(90deg, #22c1c3, #fdbb2d); */
+}
+
+/* Header */
+
+.cabecera {
+    /* Fondo del header */
+    background-image: url(https://wallpapercave.com/wp/wp8903378.jpg);
+    background-size: cover;
+    background-position-y: 15%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 30px 10%;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+/* Textos Nabvar */
+header a {
+    color: rgb(223, 223, 223);
+    font-size: 21px;
+    font-weight: 500;
+}
+
+/* Botones del Header */
+
+.nav_title {
+    list-style: none;
+}
+
+.nav_title li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav_title li a {
+    transition: all 0.4s ease 0s;
+    text-decoration: none;
+    text-shadow: 4px 4px 5px #000000;
+}
+
+.nav_title li a:hover {
+    color: #222222;
+    /* color: rgb(40, 211, 6); */
+    /*  background-color: rgb(78, 230, 103);
+    opacity:0.6;
+    border-radius: 20%; */
+}
+
+/* Main */
+
+/* ---- Seccion Home ----- */
+.home {
+    display: flex;
+    align-items: center;
+    padding: 30px 5%;
+    justify-content: space-between;
+    background: linear-gradient(90deg, #0f9b0f,#dbd81bea );
+    /* background-color: #BFD200; */
+/*     background: linear-gradient(90deg, #0f9b0f, #7fad00de); 
+ */}
+
+.tit_home {
+    margin: 100px;
+    padding: 50px;
+    box-shadow: 0px 0px 1px #000;
+}
+
+.home img {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.568);
+    height: 30%;
+    width: 600px;
+}
+
+.img_home {
+    padding: 30px;
+}
+
+/* ---- Seccion Evento ---- */
+
+.evento {
+    display: flex;
+    align-items: center;
+    padding: 30px 10%;
+    justify-content: space-between;
+    background: linear-gradient(90deg, #0f9b0f,#dbd81bea );
+}
+
+.tit_evento {
+    margin: 100px;
+    padding: 50px;
+    box-shadow: 0px 0px 1px #000;
+
+}
+
+.event_video {
+    padding: 10px;
+}
+
+.event_video iframe {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.781), 0 4px 20px 0 rgba(0, 0, 0, 0.651);
+}
+
+/* Seccion Nosotros */
+
+.nosotros {
+    display: flex;
+    align-items: center;
+    padding: 30px 5%;
+    justify-content: space-between;
+    background: linear-gradient(90deg, #0f9b0f,#dbd81bea );
+}
+
+.tit_nosotros {
+    margin: 100px;
+    padding: 50px;
+    box-shadow: 0px 0px 1px #000;
+}
+
+.nosotros img {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.568);
+    height: 30%;
+    width: 600px;
+}
+
+.nosotros_img {
+    padding: 20px;
+}
+
+/* Seccion Registro */
+
+.registro {
+    display: flex;
+    align-items: center;
+    padding: 30px 10%;
+    justify-content: space-between;
+    background: linear-gradient(90deg, #0f9b0f,#dbd81bea );
+    font-size: 18px;
+    font-weight: 700;
+
+}
+
+.tit_registro {
+    margin: 100px;
+    padding: 50px;
+    box-shadow: 0px 0px 1px #000;
+}
+
+/* -- Formulario -- */
+legend {
+    background-color: rgba(128, 128, 128, 0.692);
+    color: white;
+    padding: 5px 10px;
+}
+
+.form_reg {
+    width: 60%;
+    padding: 50px;
+    margin: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.781), 0 4px 20px 0 rgba(0, 0, 0, 0.651);
+    color: rgba(0, 0, 0, 0.76);
+}
+
+.form_reg form {
+    display: block;
+}
+
+
+.form-group {
+    margin: 40px;
+    text-align: center;
+}
+
+/* -- Boton -- */
+.btn {
+    padding: 50px;
+}
+
+.btn_enviar {
+    height: 50px;
+    width: 100%;
+}
+
+/* Seccion Clima - API - */
+
+.clima {
+    display: flex;
+    align-items: center;
+    padding: 30px 10%;
+    justify-content: space-between;
+    background: linear-gradient(90deg, #0f9b0f,#dbd81bea );
+}
+
+.estado_clima {
+    color: #fff;
+    margin: 100px;
+    padding: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.781), 0 4px 20px 0 rgba(0, 0, 0, 0.651);
+    background-image: url(https://www.on24.com.ar/wp-content/uploads/2021/10/Clima.gif);
+    background-size: cover;
+    height: 300px;
+    width: 500px;
+    text-shadow: 4px 4px 5px #000000;
+    text-transform: uppercase;
+
+
+}
+.img_clima_logo {
+    align-items: center;
+    justify-content: center;
+}
+.img_clima_logo img{
+    height: 100px;
+    width: 100%;
+}
+
+/* Mapa Clima */
+
+.map_clima {
+    padding: 20px;
+}
+/* .map_clima iframe{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.781), 0 4px 20px 0 rgba(0, 0, 0, 0.651);
+} */
+
+/* Logo Gobierno Jujuy */
+.logo_gob {
+    text-align: center;
+    background: linear-gradient(90deg, #0f9b0f,#dbd81bea );
+}
+
+.logo_gob img {
+    height: 150px;
+    width: 150px;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    align-items: center;
+    padding: 10px 10%;
+    justify-content: center;
+    /* background: linear-gradient(90deg, #0f9b0f,#dbd81bea ); */
+    background-color: #272727;
+    
+}
+
+.contacto {
+    color: #fff;
+    display: flex;
+    
+}
+.contacto a {
+    text-decoration: none;
+}
+.contacto p {
+    display: inline-block;
+    padding: 0 5px;
+    text-align: center;
+}
+
+.contacto img {
+    height: 20px;
+    width: 20px;
+}
+
+.link_wtp {
+    color: rgb(40, 211, 6);
+}
+
+/* Titulos y Parrafo */
+h1,
+h2,
+h3,
+p {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Carrucel de Imagenes */
+
+.container {
+    margin: auto;
+    background-color: white;
+    width: auto;
+    padding: 30px;
+}
+
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul.slider {
+    position: relative;
+    width: 800px;
+    height: 300px;
+}
+
+ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background: #fff;
+}
+
+ul.slider li img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+ul.slider li:first-child {
+    opacity: 1;
+    /*Mostramos el primer <li>*/
+}
+
+ul.slider li:target {
+    opacity: 1;
+    /*Mostramos el <li> del enlace que pulsemos*/
+}
+
+.menu {
+    text-align: center;
+    margin: 20px;
+}
+
+.menu li {
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: grey;
+    padding: 10px;
+    width: 2px;
+    height: 2px;
+    font-size: 20px;
+    border-radius: 100%;
+}
